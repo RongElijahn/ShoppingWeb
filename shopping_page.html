@@ -1,0 +1,158 @@
+<!DOCTYPE html >
+<html>
+  <head>
+     <title>WeShop</title>
+     <meta charset="utf-8">
+     <link rel="icon" type="image/x-icon" href="logo.avif">
+     <link rel="stylesheet" type="text/css" href="shopping_page.css">
+     <script type="text/javaScript" src="shopping_page.js">
+     </script>
+  </head>
+  <body>
+     <div id="container">
+       <header>
+        <div class="head">
+        <div class="headerText">
+          <p>Welcome to WeShop</p>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li><a class="headerMenu" href="">Home</a></li>
+            <li><a class="headerMenu" href="">login </a></li>
+            <li><a class="headerMenu" href="">Cart</a></li>
+          </ul>
+         </div>
+       </div>
+       </header>
+       <br>
+      
+       <div id = "topNav" class="topNavSection">
+          <div class="logoSection">
+            <img class="logoImage" src="shopping-icon.png" width="80" alt="Logo">
+          </div>
+          <div class="searchSection">
+              <div class="secrchSectionTop">
+                <form action="">
+                  <input class="searchText" type="text" id="search-content" placeholder="search something here">
+                  <input class="searchButton" type="submit" id="search-submit" value="" >
+                </form>
+             </div>
+             <div id="listNav" class="listSection">
+              <ul>
+                <li><a href="">Clothing</a>
+                  <ul class="clothingSelect">
+                    <li><a href="">Women</li>
+                    <li><a href="">Men  </li>
+                    <li><a href="">Kids </li>
+                  </ul>
+                </li>
+                <li><a href="">furniture</a>
+                  <ul class="clothingSelect">
+                    <li><a href="">Sofa</li>
+                    <li><a href="">Bed </li>
+                    <li><a href="">Desk </li>
+                  </ul>
+                </li>
+                <li><a href="">kitcken</a>
+                  <ul class="clothingSelect">
+                    <li><a href="">Cabinet</li>
+                    <li><a href="">Tool </li>
+                    <li><a href="">Storage </li>
+                    <li><a href="">Accessories </li>                      
+                  </ul>
+                </li>
+              </ul>
+            </div>
+         </div>
+       </div>
+       <br>
+
+       <div id = "leftNav">
+         <div class="item">
+           <div class="slideshow-container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img class="itemPicture" src="item1.jpg">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img class="itemPicture" src="item2.jpg" >
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img class="itemPicture" src="item3.jpg">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div clss="itemDetail">
+                 <p class="itemDescription"> <em class="itemName">Foneso Desk Lamp</em>, LED Clip on Light Reading Lights USB Book Clamp Light with 2 Color Modes Eye Protection Kids Desk Lamp 360 ° Flexible Gooseneck Bed Night Light for Study, Read, Office, Home </p>
+                 <p class="itemRate">4.0 &#9733 &#9733 &#9733 &#9733 &#9734 </p>
+                 <p class="itemRecord">300+ bought in past month </p>
+                 <p class="itemPrice">$16<sup>99</sup></p>
+                 <ul class="itemCharacteristic">
+                     <li> <em><b>style</b></em> &nbsp &nbsp &nbsp Reading light</li>
+                     <li> <em><b>brand</b></em> &nbsp  &nbsp &nbsp   Foneso </li>
+                     <li> <em><b>Color</b></em> &nbsp  &nbsp &nbsp   2 Color</li>
+                     <li> <em><b>Pronduct</b></em> &nbsp &nbsp &nbsp 9D x 6W x 5.7H Centimetres</li>
+                 </ul>
+                 <p class="itemChoiceDescription"><em>Choice of Color :</em></p>
+                 <form action="" class="itemChoice">
+                     <input type="radio" id="choice1" name="choice" va1ue="black" checked="checked" >
+                     <label class ="choice" for="choice1">Black</label>
+                     <input type="radio" id="choice2" name="choice" va1ue="white">
+                     <label  class ="choice" for="choice2">White</label>
+                 </form>
+                 <br>
+            </div>
+         </div>
+         <div class="addCart">
+              <input class="itemAdd" type="submit" id="addItemButton" value="AddItem">
+              <br>
+         </div>
+       </div>
+       <br>
+       <br>
+
+
+       <div id = "rightNav">
+           <div class="reference">
+             <p class="refText">Somthing you may like:</p>
+             <div class=refItem>
+                 <ul>
+                    <li>
+                         <a href=""><img class="refImage" src="ref1.jpg"></a>
+                    </li>
+                    <li>
+                         <a href=""><img class="refImage" src="ref2.jpg"></a>
+                    </li>
+                    <li>
+                         <a href=""><img class="refImage" src="ref3.jpg"></a>
+                    </li>
+                </ul>
+             </div>
+           </div>
+       </div>
+       <br>  
+
+
+       <div class="footer">
+         <p>Posted by: Rong Zhou</p>
+         <p>StuID: 219275874</p>
+       </div>
+    </div>
+
+
+  <!--Scirpt for event -->
+  <script type ="text/javaScript" src="pre_shopping_page.js">
+  </script>
+  </body>
+</html>
